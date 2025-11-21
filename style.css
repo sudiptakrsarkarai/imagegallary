@@ -1,0 +1,67 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+.filter-btn {
+    border: none;
+    padding: 10px 18px;
+    margin: 5px;
+    cursor: pointer;
+    background: #555;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #0099cc;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-card {
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.image-card img {
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+}
