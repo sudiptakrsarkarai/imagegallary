@@ -3,56 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Image Gallery</title>
+    <title>Art Gallery Collection</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Image Gallery</h1>
+        <h1>Art Gallery Collection</h1>
+        <p class="subtitle">Explore Our Curated Art Exhibition</p>
     </header>
 
+    <nav>
+        <button class="filter-btn active" data-category="all">All Artworks</button>
+        <button class="filter-btn" data-category="modern">Modern Art</button>
+        <button class="filter-btn" data-category="abstract">Abstract</button>
+        <button class="filter-btn" data-category="classic">Classic</button>
+        <button class="filter-btn" data-category="contemporary">Contemporary</button>
+        <button class="filter-btn" data-category="impressionist">Impressionist</button>
+    </nav>
+
     <section class="gallery">
-        <div class="image-card">
-            <img src="./11319597.jpg" >
+        <div class="image-card" data-category="modern">
+            <img src="./11319597.jpg" alt="Art 1">
+            <div class="card-info">
+                <h3>Art 1</h3>
+                <span class="badge">Modern</span>
+            </div>
         </div>
-        <p>Art 1</p>
-        <div class="image-card">
-            <img src="./11692887.jpg" >
+
+        <div class="image-card" data-category="abstract">
+            <img src="./11692887.jpg" alt="Art 2">
+            <div class="card-info">
+                <h3>Art 2</h3>
+                <span class="badge">Abstract</span>
+            </div>
         </div>
-        <p>Art 2</p>
-        <div class="image-card">
-            <img src="./6794954.jpg">
+
+        <div class="image-card" data-category="classic">
+            <img src="./6794954.jpg" alt="Art 3">
+            <div class="card-info">
+                <h3>Art 3</h3>
+                <span class="badge">Classic</span>
+            </div>
         </div>
-        <p>Art 3</p>
-        <div class="image-card">
-            <img src="./img4.jpg">
+
+        <div class="image-card" data-category="contemporary">
+            <img src="./img4.jpg" alt="Art 4">
+            <div class="card-info">
+                <h3>Art 4</h3>
+                <span class="badge">Contemporary</span>
+            </div>
         </div>
-        <p>Art 4</p>
-        <div class="image-card">
-            <img src="./img5.jpg">
+
+        <div class="image-card" data-category="modern">
+            <img src="./img5.jpg" alt="Art 5">
+            <div class="card-info">
+                <h3>Art 5</h3>
+                <span class="badge">Modern</span>
+            </div>
         </div>
-        <p>Art 5 </p>
-        <div class="image-card">
-            <img src="./img6.jpg">
+
+        <div class="image-card" data-category="impressionist">
+            <img src="./img6.jpg" alt="Art 6">
+            <div class="card-info">
+                <h3>Art 6</h3>
+                <span class="badge">Impressionist</span>
+            </div>
         </div>
-        <p>Art 6</p>
-        <div class="image-card">
-            <img src="./img7.jpg">
+
+        <div class="image-card" data-category="impressionist">
+            <img src="./img7.jpg" alt="Art 7">
+            <div class="card-info">
+                <h3>Art 7</h3>
+                <span class="badge">Impressionist</span>
+            </div>
         </div>
-        <p>Art 7</p>
-        <div class="image-card">
-            <img src="./img8.jpg">
+
+        <div class="image-card" data-category="abstract">
+            <img src="./img8.jpg" alt="Art 8">
+            <div class="card-info">
+                <h3>Art 8</h3>
+                <span class="badge">Abstract</span>
+            </div>
         </div>
-        <p>Art 8</p>
-        <div class="image-card">
-            <img src="./img9.jpg">
+
+        <div class="image-card" data-category="classic">
+            <img src="./img9.jpg" alt="Art 9">
+            <div class="card-info">
+                <h3>Art 9</h3>
+                <span class="badge">Classic</span>
+            </div>
+        </div>
+
+        <!-- Additional Internet Images -->
+        <div class="image-card" data-category="modern">
+            <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=500" alt="Modern Art 10">
+            <div class="card-info">
+                <h3>Modern Expression</h3>
+                <span class="badge">Modern</span>
+            </div>
+        </div>
+
+        <div class="image-card" data-category="abstract">
+            <img src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?w=500" alt="Abstract Art 11">
+            <div class="card-info">
+                <h3>Abstract Colors</h3>
+                <span class="badge">Abstract</span>
+            </div>
+        </div>
+
+        <div class="image-card" data-category="contemporary">
+            <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=500" alt="Gallery Art 12">
+            <div class="card-info">
+                <h3>Gallery View</h3>
+                <span class="badge">Contemporary</span>
+            </div>
+        </div>
+
+        <div class="image-card" data-category="modern">
+            <img src="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?w=500" alt="Museum Art 13">
+            <div class="card-info">
+                <h3>Museum Piece</h3>
+                <span class="badge">Modern</span>
+            </div>
+        </div>
+
+        <div class="image-card" data-category="classic">
+            <img src="https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=500" alt="Classic Art 14">
+            <div class="card-info">
+                <h3>Classic Portrait</h3>
+                <span class="badge">Classic</span>
+            </div>
+        </div>
+
+        <div class="image-card" data-category="abstract">
+            <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=500" alt="Abstract Pattern 15">
+            <div class="card-info">
+                <h3>Abstract Pattern</h3>
+                <span class="badge">Abstract</span>
+            </div>
+        </div>
+
+        <div class="image-card" data-category="impressionist">
+            <img src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=500" alt="Impressionist 16">
+            <div class="card-info">
+                <h3>Impressionist Style</h3>
+                <span class="badge">Impressionist</span>
+            </div>
+        </div>
+
+        <div class="image-card" data-category="contemporary">
+            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500" alt="Contemporary Art 17">
+            <div class="card-info">
+                <h3>Contemporary Vision</h3>
+                <span class="badge">Contemporary</span>
+            </div>
+        </div>
+
+        <div class="image-card" data-category="modern">
+            <img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=500" alt="Modern Gallery 18">
+            <div class="card-info">
+                <h3>Modern Gallery</h3>
+                <span class="badge">Modern</span>
+            </div>
+        </div>
+
+        <div class="image-card" data-category="abstract">
+            <img src="https://images.unsplash.com/photo-1515405295579-ba7b45403062?w=500" alt="Abstract Shapes 19">
+            <div class="card-info">
+                <h3>Abstract Shapes</h3>
+                <span class="badge">Abstract</span>
+            </div>
+        </div>
+
+        <div class="image-card" data-category="classic">
+            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500" alt="Classic Hall 20">
+            <div class="card-info">
+                <h3>Classic Hall</h3>
+                <span class="badge">Classic</span>
+            </div>
         </div>
     </section>
+
     <script src="script.js"></script>
-    <br><br><br><br><br>
+
     <footer>
-        <p>&copy; 2025 Simple Image Gallery. All rights reserved.</p>
+        <p>&copy; 2025 Art Gallery Collection. All rights reserved.</p>
+        <p class="footer-sub">Curated with passion for art lovers</p>
     </footer>
 </body>
 </html>
